@@ -1,0 +1,241 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --light-grey: #f5f6f7;
+  --dark-grey: #0a0a23;
+  --yellow: #f1be32;
+  --golden-yellow: #feac32;
+}
+
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    margin: 20px 0 10px 0;
+
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+    height: 500px;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    position: relative;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.btn:active {
+    transform: scale(1.04);
+}
+
+.large-btn {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2rem;
+}
+
+.close-task-form-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: brightness(0%);
+    transform: scale(0.5);
+}
+
+.task-form {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 15px;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+.task-form-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task-form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.task-form-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.task-form-label,
+#title-input,
+#date-input,
+#description-input {
+    display: block;
+}
+
+.task-form-label {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#title-input,
+#date-input,
+#description-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#description-input {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+#confirm-close-dialog {
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 350px;
+  text-align: center;
+}
+
+#confirm-close-dialog p {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.confirm-close-dialog-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.confirm-close-dialog-btn-container button {
+    padding: 7px 15px; 
+    font-size: 1.2rem;
+}
+
+.discard-message-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#tasks-container {
+  height: 100%;
+  width: 350px;
+  margin: 20px;
+  overflow-y: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+#tasks-container div button{
+    padding: 7px 25px; 
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#tasks-container div button:last-of-type{
+    margin: 5px 10px;
+}
+
+.task {
+  margin: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.header-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div .clear-all-btn-active {
+    display: flex;
+    width: 100%;
+}
+
+div button .clear-all-btn-active {
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+  .todo-app,
+  .task-form {
+    width: 400px;
+    height: 450px;
+  }
+
+  .task-form-label {
+    font-size: 1.5rem;
+  }
+
+  #title-input,
+  #date-input {
+    height: 2rem;
+  }
+
+  #title-input,
+  #date-input,
+  #description-input {
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+}

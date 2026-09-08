@@ -1,0 +1,27 @@
+# Системные файлы macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Системные файлы Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Редакторы и IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Логи
+*.log
+npm-debug.log*
+
+# Зависимости (если будете использовать npm)
+node_modules/
+
+# Временные файлы
+*.tmp
+*.temp
+*~
