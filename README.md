@@ -1,77 +1,77 @@
 # JS Todo App
 
-Простое веб-приложение для управления задачами, построенное на чистом JavaScript с использованием localStorage для сохранения данных.
+A simple web application for task management built with pure JavaScript using localStorage for data persistence.
 
-## Возможности
+## Features
 
-- Создание задач с названием, датой и описанием
-- Редактирование существующих задач
-- Удаление отдельных задач
-- Массовое удаление всех задач (Clear All)
-- Автоматическое сохранение данных в localStorage
-- Защита от потери данных при закрытии формы с несохраненными изменениями
-- Адаптивный дизайн для мобильных устройств
+- Create tasks with title, date, and description
+- Edit existing tasks
+- Delete individual tasks
+- Bulk delete all tasks (Clear All)
+- Automatic data saving to localStorage
+- Protection against data loss when closing the form with unsaved changes
+- Responsive design for mobile devices
 
-## Технологии
+## Technologies
 
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES6+)
 - localStorage API
 
-## Структура проекта
+## Project Structure
 
 ```
 JS-Todo-App/
-├── index.html          # Главная HTML-страница
+├── index.html          # Main HTML page
 ├── JS-ToDo-App/
-│   ├── script.js       # Логика приложения
-│   └── styles.css      # Стили
-└── README.md           # Документация
+│   ├── script.js       # Application logic
+│   └── styles.css      # Styles
+└── README.md           # Documentation
 ```
 
-## Установка и запуск
+## Installation and Usage
 
-1. Клонируйте репозиторий или скачайте файлы проекта
-2. Откройте `index.html` в браузере
+1. Clone the repository or download the project files
+2. Open `index.html` in your browser
 
-Дополнительная установка зависимостей не требуется.
+No additional dependency installation required.
 
-## Использование
+## Usage
 
-### Добавление задачи
+### Adding a Task
 
-1. Нажмите кнопку **Add New Task**
-2. Заполните поля:
-   - **Title** (обязательно) — название задачи
-   - **Date** — дата выполнения
-   - **Description** — описание задачи
-3. Нажмите **Add Task**
+1. Click the **Add New Task** button
+2. Fill in the fields:
+   - **Title** (required) — task name
+   - **Date** — due date
+   - **Description** — task description
+3. Click **Add Task**
 
-### Редактирование задачи
+### Editing a Task
 
-1. Нажмите кнопку **Edit** на карточке задачи
-2. Измените нужные поля в открывшейся форме
-3. Нажмите **Update Task**
+1. Click the **Edit** button on the task card
+2. Modify the desired fields in the opened form
+3. Click **Update Task**
 
-### Удаление задачи
+### Deleting a Task
 
-Нажмите кнопку **Delete** на карточке задачи для её удаления.
+Click the **Delete** button on the task card to remove it.
 
-### Удаление всех задач
+### Deleting All Tasks
 
-Нажмите кнопку **Clear All** для удаления всех задач. Кнопка появляется, когда в списке есть хотя бы одна задача.
+Click the **Clear All** button to delete all tasks. The button appears when there is at least one task in the list.
 
-## Хранение данных
+## Data Storage
 
-Все задачи сохраняются в localStorage браузера под ключом `data`. Данные сохраняются автоматически при:
-- Добавлении новой задачи
-- Редактировании задачи
-- Удалении задачи
-- Массовом удалении задач
+All tasks are saved in the browser's localStorage under the `data` key. Data is saved automatically when:
+- Adding a new task
+- Editing a task
+- Deleting a task
+- Bulk deleting tasks
 
-Данные сохраняются между сессиями браузера.
+Data persists between browser sessions.
 
-## Поддержка браузеров
+## Browser Support
 
-Приложение работает во всех современных браузерах с поддержкой ES6+ и localStorage API.
+The application works in all modern browsers with ES6+ and localStorage API support.
