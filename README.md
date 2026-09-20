@@ -1,3 +1,5 @@
+![App Screenshot](screenshots/image.png?raw=true "App Screenshot")
+
 # JS Todo App
 
 A simple web application for task management built with pure JavaScript using localStorage for data persistence.
